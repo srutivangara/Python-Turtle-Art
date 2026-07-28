@@ -1,0 +1,19 @@
+import turtle
+
+screen = turtle.Screen()
+screen.bgcolor("black")
+screen.title("Geometric Bloom")
+
+t = turtle.Turtle()
+t.speed(0)
+t.pensize(1)
+t.color("#d4a017")      # Golden color
+t.hideturtle()
+
+radius = 120
+
+for i in range(72):
+    t.circle(radius)
+    t.left(5)
+
+screen.mainloop()
