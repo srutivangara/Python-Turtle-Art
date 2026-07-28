@@ -1,0 +1,45 @@
+import turtle
+
+# Screen setup
+screen = turtle.Screen()
+screen.bgcolor("black")
+screen.title("Fractal Blossom Tree")
+
+# Turtle setup
+t = turtle.Turtle()
+t.speed(0)
+t.left(90)
+t.color("brown")
+t.pensize(10)
+t.up()
+t.goto(0, -300)
+t.down()
+
+
+def tree(length):
+    if length < 10:
+        t.color("pink")
+        t.begin_fill()
+        t.circle(3)
+        t.end_fill()
+        t.color("brown")
+        return
+
+    t.forward(length)
+
+    t.left(20)
+    tree(length * 0.75)
+
+    t.right(40)
+    tree(length * 0.75)
+
+    t.left(20)
+
+    t.backward(length)
+
+
+# Draw the tree
+tree(120)
+
+t.hideturtle()
+screen.mainloop()
