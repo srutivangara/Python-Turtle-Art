@@ -13,19 +13,6 @@ This repository contains Python scripts that use the `turtle` graphics library t
 
 No additional installation is required for the `turtle` module itself.
 
-## 🚀 Getting Started
-
-1. Clone this repository:
-```bash
-   git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name
-```
-
-2. Run any script using Python:
-```bash
-   python main.py
-```
-
 ## 🎨 Features
 
 - Draw basic shapes (squares, circles, polygons, stars)
